@@ -18,7 +18,9 @@
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.0.2",
     "merge2": "^1.0.2",
-    "typescript": "^2.0.6"
+    "typescript": "^2.0.6",
+    "ds18b20-raspi": "latest",
+    "node-dht-sensor": "latest"
   },
   "dependencies": {
     "ds18b20-raspi": "latest",
