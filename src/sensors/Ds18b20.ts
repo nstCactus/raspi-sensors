@@ -8,7 +8,7 @@
 import {AbstractSensor} from "../AbstractSensor";
 import {SensorValue, Type} from "../SensorValue";
 
-var ds18b20:Ds18b20 = require("ds18b20");
+var ds18b20:Ds18b20 = require("ds18b20-raspi");
 
 namespace Sensors {
     export class Ds18b20 extends AbstractSensor {

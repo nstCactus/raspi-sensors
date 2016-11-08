@@ -6,7 +6,7 @@
 ///<reference path="../../typings/index.d.ts"/>
 const AbstractSensor_1 = require("../AbstractSensor");
 const SensorValue_1 = require("../SensorValue");
-var ds18b20 = require("ds18b20");
+var ds18b20 = require("ds18b20-raspi");
 var Sensors;
 (function (Sensors) {
     class Ds18b20 extends AbstractSensor_1.AbstractSensor {
