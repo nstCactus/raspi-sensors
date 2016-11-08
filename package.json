@@ -21,6 +21,7 @@
     "typescript": "^2.0.6"
   },
   "dependencies": {
-    "ds18b20-raspi": "nstCactus/ds18b20-raspi"
+    "ds18b20-raspi": "latest",
+    "node-dht-sensor": "latest"
   }
 }
