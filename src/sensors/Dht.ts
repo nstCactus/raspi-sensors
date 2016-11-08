@@ -10,7 +10,7 @@ import {SensorValue, Type} from "../SensorValue";
 var dht:Dht = require("node-dht-sensor");
 
 namespace Sensors {
-    export class Dht extends AbstractSensor {
+    export default class Dht extends AbstractSensor {
         public static readonly sensorType: number = 22;
 
         protected gpioPin: number;

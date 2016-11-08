@@ -23,5 +23,5 @@ var Sensors;
         }
     }
     Dht.sensorType = 22;
-    Sensors.Dht = Dht;
+    exports.default = Dht;
 })(Sensors || (Sensors = {}));

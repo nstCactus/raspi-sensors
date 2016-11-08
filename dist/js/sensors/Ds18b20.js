@@ -18,5 +18,5 @@ var Sensors;
             return ds18b20.list();
         }
     }
-    Sensors.Ds18b20 = Ds18b20;
+    exports.default = Ds18b20;
 })(Sensors || (Sensors = {}));
