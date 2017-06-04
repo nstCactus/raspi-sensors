@@ -1,29 +1,35 @@
 {
   "private": true,
-
-  "name": "growbox-sensors",
-  "version": "1.0.0",
-  "description": "An abstract class for growbox sensors.",
+  "name": "raspi-sensors",
+  "version": "0.1.0",
+  "description": "An abstraction layer for a selection of raspberry-compatible sensors",
   "main": "dist/js/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
   "keywords": [
-    "growbox",
+    "raspi",
+    "raspberry pi",
+    "ds18b20",
+    "dht",
+    "dht22",
+    "dht11",
     "sensors"
   ],
-  "author": "Yohann Bianchi <nstCactus@gmail.com>",
+
+  "author": "nstCactus<nstCactus@gmail.com>",
   "license": "ISC",
+
   "devDependencies": {
+    "@types/node": "^8.0.0",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.0.2",
     "merge2": "^1.0.2",
-    "typescript": "^2.0.6",
-    "ds18b20-raspi": "latest",
-    "node-dht-sensor": "latest"
+    "typescript": "^2.0.6"
   },
+
   "dependencies": {
-    "ds18b20-raspi": "latest",
-    "node-dht-sensor": "latest"
-  }
+    "ds18b20-raspi": "^0.2.5",
+    "node-dht-sensor": "^0.0.32"
+  },
+
+  "typings": "dist/definitions/index.d.ts"
 }

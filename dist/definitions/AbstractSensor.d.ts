@@ -1,4 +1,4 @@
-/// <reference path="../typings/index.d.ts" />
+/// <reference path="../../typings/index.d.ts" />
 /**
  * @author nstCactus
  * @date 20/10/16 22:56

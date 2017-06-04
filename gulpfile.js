@@ -2,14 +2,15 @@
  * @author nstCactus
  * @date 21/10/16 13:54
  */
-var gulp = require('gulp');
-var ts = require('gulp-typescript');
-var merge = require('merge2');
+const gulp  = require('gulp');
+const ts    = require('gulp-typescript');
+const merge = require('merge2');
 
-var tsProject = ts.createProject('tsconfig.json');
+const tsProject = ts.createProject('tsconfig.json');
 
-gulp.task('scripts', () => {
-    var tsResult = tsProject.src() // instead of gulp.src(...)
+gulp.task('scripts', () =>
+{
+    const tsResult = tsProject.src()
         .pipe(tsProject());
 
     return merge([
@@ -18,11 +19,12 @@ gulp.task('scripts', () => {
     ]);
 });
 
-gulp.task('watch', ['scripts'], function() {
+gulp.task('watch', ['scripts'], function ()
+{
     gulp.watch([
         'src/**/*.ts',
         'typings/**/*.ts'
     ], ['scripts']);
 });
 
-gulp.task('default',[ 'scripts', 'watch' ]);
+gulp.task('default', ['scripts', 'watch']);

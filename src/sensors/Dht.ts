@@ -7,7 +7,7 @@
 
 import {AbstractSensor} from "../AbstractSensor";
 import {SensorValue, Type} from "../SensorValue";
-var dht:Dht = require("node-dht-sensor");
+const dht: Dht = require("node-dht-sensor");
 
 export  class DhtSensor extends AbstractSensor {
     public static readonly sensorType: number = 22;
@@ -21,11 +21,15 @@ export  class DhtSensor extends AbstractSensor {
     }
 
     read(): Array<SensorValue> {
-        var reading = dht.read(DhtSensor.sensorType, this.gpioPin);
+        try {
+            const reading = dht.read(DhtSensor.sensorType, this.gpioPin);
 
-        return [
-            new SensorValue(Type.temperature, reading.temperature),
-            new SensorValue(Type.humidity, reading.humidity),
-        ];
+            return [
+                new SensorValue(Type.temperature, reading.temperature),
+                new SensorValue(Type.humidity, reading.humidity),
+            ];
+        } catch (e) {
+            console.warn(`Skipping dht sensor ${this.getName()} as an error occurred while reading from it`);
+        }
     }
 }
