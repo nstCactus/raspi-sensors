@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "description": "An abstraction layer for a selection of raspberry-compatible sensors",
   "main": "dist/js/index.js",
-
   "keywords": [
     "raspi",
     "raspberry pi",
@@ -14,22 +13,18 @@
     "dht11",
     "sensors"
   ],
-
   "author": "nstCactus<nstCactus@gmail.com>",
   "license": "ISC",
-
   "devDependencies": {
-    "@types/node": "^8.0.0",
+    "@types/node": "^7.0.0",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.0.2",
     "merge2": "^1.0.2",
     "typescript": "^2.0.6"
   },
-
   "dependencies": {
     "ds18b20-raspi": "^0.2.5",
     "node-dht-sensor": "^0.0.32"
   },
-
   "typings": "dist/definitions/index.d.ts"
 }

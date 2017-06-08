@@ -6,10 +6,11 @@
 import {AbstractSensor} from "./AbstractSensor";
 import {Ds18b20Sensor} from "./sensors/Ds18b20";
 import  {DhtSensor} from "./sensors/Dht";
-
+import {SensorValue} from './SensorValue';
 
 export default AbstractSensor;
 export {
     Ds18b20Sensor,
     DhtSensor,
+    SensorValue,
 }

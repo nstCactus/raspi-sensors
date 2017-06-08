@@ -1,8 +1,9 @@
+"use strict";
 /**
  * @author nstCactus
  * @date 24/10/16 12:57
  */
-"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 ///<reference path="../../typings/index.d.ts"/>
 const AbstractSensor_1 = require("../AbstractSensor");
 const SensorValue_1 = require("../SensorValue");
