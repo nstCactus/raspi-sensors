@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "ds18b20-raspi": "^0.2.5",
-    "node-dht-sensor": "^0.0.32"
+    "node-dht-sensor": "^0.4.1"
   },
   "typings": "dist/definitions/index.d.ts"
 }
